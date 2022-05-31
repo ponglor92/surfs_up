@@ -19,7 +19,7 @@
 There is not much of a difference between the June and December temperatures like how there would be differences in some other states in the United States. Some additional queries that I would add to gather more weather data for June and December is the months July and October.
 
 1.	Query for July (summer)
-2.	
+
 ![July temperture](https://user-images.githubusercontent.com/101531875/171085596-f22dfd40-2f7c-4807-9cb0-e43b2a11d94f.png)
 
 July_temperatures = session.query(Measurement).filter(extract('month', Measurement.date) == 3)
@@ -29,7 +29,7 @@ July_temp_df.describe()
 
 
 2.	Query for October (fall)
-3.	
+	
 ![oct temperture](https://user-images.githubusercontent.com/101531875/171085633-bbb45713-4d1b-49f7-8c23-33c4faf3ef08.png)
 
 October_temperatures = session.query(Measurement).filter(extract('month', Measurement.date) == 9)
